@@ -8,9 +8,29 @@
 </head>
 <body>
     <form action="">
-        <h1>HTML űrlap (HTML Forms)</h1>
-        <label for="">Név:</label>
-        <input type="text">
+        <div class="firstColumnCont">
+            <h2>Adatok:</h2>
+            <div class="name_container">
+                <label for="name">Név:</label>
+                <input placeholder="Írja be a nevét" id="name" name="name" type="text" required>
+            </div>
+
+            <div class="address_container">
+                <label for="address">Cím:</label>
+                <input placeholder="Írja be a címét" id="address" name="address" type="text" required>
+            </div>
+
+            <div class="phone_container">
+                <label for="phone">Telefonszám:</label>
+                <input placeholder="+36..." id="phone" name="phone" type="tel" required>
+            </div>
+
+            <div class="birthdate_container">
+                <label for="date">Születési Dátum:</label>
+                <input id="date" name="date" type="date" required>
+            </div>
+        </div>
+        <button type="submit" id="submit">Elküld</button>
     </form>
 </body>
 </html>
