@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(90deg, rgb(227, 244, 13) 47%, rgb(3, 250, 92) 75%);
+    background: linear-gradient(90deg, rgb(36, 111, 124), rgb(115, 30, 149));
+    color: white;
 }
 
 .firstColumnCont{
@@ -8,35 +9,26 @@ body {
     width: 240px;
     top: 130px;
     padding: 20px;
-    border: 4px solid #ccc;
-    border: none;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.firstColumnCont::after {
+.firstColumnCont::after, .firstColumnCont::before {
     content: '';
     position: absolute;
-    top: 1px;
-    bottom: -1px;
-    right: -1px;
-    left: -1px;
-    width: 4px;
-    height: 345px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: -5px;
     z-index: -1;
-    background: linear-gradient(to bottom, blue, red);
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, rgba(14, 209, 147, 0.545), rgba(192, 163, 17, 0.47));
 }
-
-
-.firstColumnCont::top-line {
-    content: '';
-    position: absolute;
-    left: -4px;
-    top: 100px;
-    width: 320px;
-    height: 4px;
-    background: linear-gradient(to bottom, blue, red);
-    animation: fill 2s ease-in-out forwards;
+.firstColumnCont::before {
+    filter: blur(8px);
 }
 
 .firstColumnCont label {
@@ -62,7 +54,7 @@ body {
 
 #submit {
     position: relative;
-    top: 140px;
+    top: 145px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -74,4 +66,23 @@ body {
 #submit:hover {
     color: white;
     background-color: black;
+}
+
+.secondFormCont {
+    position: relative;
+    margin: auto;
+    top: 230px;
+    width: 240px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.secondFormCont div {
+    margin-bottom: 13px;
+    
+}
+
+#maintext2 {
+    text-align: center;
 }
