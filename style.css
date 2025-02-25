@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(90deg, rgb(36, 111, 124), rgb(115, 30, 149));
+    background: linear-gradient(90deg, rgb(36, 111, 124) 45%, rgb(115, 30, 149)85%);
     color: white;
 }
 
@@ -10,25 +10,7 @@ body {
     top: 130px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.firstColumnCont::after, .firstColumnCont::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    bottom: 0;
-    right: 0;
-    left: -5px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 6px;
-    border-radius: inherit;
-    background: linear-gradient(to bottom, rgba(14, 209, 147, 0.545), rgba(192, 163, 17, 0.47));
-}
-.firstColumnCont::before {
-    filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .firstColumnCont label {
@@ -42,6 +24,7 @@ body {
     border-radius: 4px;
     margin-bottom: 3px;
     padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .firstColumnCont div {
@@ -65,7 +48,7 @@ body {
 
 #submit:hover {
     color: white;
-    background-color: black;
+    background-color: rgb(193, 137, 7);
 }
 
 .secondFormCont {
@@ -79,10 +62,20 @@ body {
 }
 
 .secondFormCont div {
-    margin-bottom: 13px;
-    
+    margin-bottom: 16px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    padding: 3px
+}
+
+.secondFormCont csop {
+    cursor: pointer;
+}
+
+.secondFormCont h3 {
+    text-align: center;
 }
 
 #maintext2 {
     text-align: center;
+    padding: 5px;
 }
