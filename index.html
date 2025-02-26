@@ -8,73 +8,96 @@
 </head>
 <body>
     <form action="">
-        <div class="firstColumnCont">
-            <h2 id="maintext">Adatok:</h2>
-            <div class="name_container">
-                <label for="name">Név:</label>
-                <input placeholder="Írja be a Nevét" id="name" name="name" type="text" required>
+        <div class="pageCont">
+            <!-- Default data input -->
+            <div class="firstColumnCont">
+                <h2 id="maintext">Adatok:</h2>
+                <div class="name_container">
+                    <label for="name">Név:</label>
+                    <input placeholder="Írja be a Nevét" id="name" name="name" type="text" required>
+                </div>
+
+                <div class="address_container">
+                    <label for="address">Cím:</label>
+                    <input placeholder="Írja be a Címét" id="address" name="address" type="text" required>
+                </div>
+
+                <div class="phone_container">
+                    <label for="phone">Telefonszám:</label>
+                    <input placeholder="Írja be a Telefonszámát pl.: +36 70 363 3636" maxlength="15" id="phone" name="phone" type="tel" required>
+                </div>
+            
+                <div class="birthdate_container">
+                    <label for="date">Születési Dátum:</label>
+                    <input id="date" name="date" type="date" required>
+                </div>
             </div>
 
-            <div class="address_container">
-                <label for="address">Cím:</label>
-                <input placeholder="Írja be a Címét" id="address" name="address" type="text" required>
+            <!-- Radio and Box option -->
+            <div class="secondFormCont">
+                <h2 id="maintext2">További Adatok:</h2>
+
+                    <h3>Melyik csoportba tartozik gyakorlaton?</h3>
+
+                    <div class="csop">
+                        <input type="radio" name="csop" id="csop1" value="csop1">
+                        <label for="csop">A csoport</label>
+                    </div>
+
+                    <div class="csop">
+                        <input type="radio" name="csop" id="csop2" value="csop2">
+                        <label for="csop">B csoport</label>
+                    </div>
+
+                    <div class="csop">
+                        <input type="radio" name="csop" id="csop3" value="csop3">
+                        <label for="csop">C csoport</label>
+                    </div>
+
+                    <h3> Melyik a kedvenc tárgya? (több tárgyat is választhat!)</h3>
+
+                    <div class="box">
+                        <input type="checkbox" name="box" id="matek">
+                        <label for="matek">Matematika</label>
+                    </div>
+
+                    <div class="box">
+                        <input type="checkbox" name="box" id="fizika">
+                        <label for="fizika">Fizika</label>
+                    </div>
+
+                    <div class="box">
+                        <input type="checkbox" name="box" id="info">
+                        <label for="info">Informatika</label>
+                    </div>
+
+                    <div class="box">
+                        <input type="checkbox" name="box" id="prog">
+                        <label for="prog">Programozás</label>
+                    </div>
             </div>
 
-            <div class="phone_container">
-                <label for="phone">Telefonszám:</label>
-                <input placeholder="Írja be a Telefonszámát pl.: +36 70 363 3636" maxlength="15" id="phone" name="phone" type="tel" required>
-            </div>
-        
-            <div class="birthdate_container">
-                <label for="date">Születési Dátum:</label>
-                <input id="date" name="date" type="date" required>
+            <!-- Select option -->
+            <div class="thirdFormCont">
+                <h2>Szakirány és vélemény</h2>
+                <label for="szakirány">Válassza ki a szakirányt!</label>
+                <select name="szakirány" id="szak">
+                    <option value="elektrotechnika">Elektrotechnika</option>
+                    <option value="informatikus">Informatikus</option>
+                    <option value="rendszerfejlesztő">Rendszerfejlesztő</option>
+                    <option value="szakács">Szakács</option>
+                </select>
+
+                <!-- Textarea -->
+                <h3>Írja ide a véleményét!</h3>
+                <div class="opinionCont">
+                    <label for="opinion">Vélemény:</label>
+                    <textarea name="opinion" id="opinion" rows="10" cols="30"></textarea>
+                </div>
             </div>
         </div>
 
         <button type="submit" id="submit">Elküld</button>
-
-        <div class="secondFormCont">
-            <h2 id="maintext2">További Adatok:</h2>
-
-                <h3>Melyik csoportba tartozik gyakorlaton?</h3>
-
-                <div class="csop1">
-                    <input type="radio" name="csop" id="csop1" value="csop1">
-                    <label for="csop1">A csoport</label>
-                </div>
-
-                <div class="csop2">
-                    <input type="radio" name="csop" id="csop2" value="csop2">
-                    <label for="csop2">B csoport</label>
-                </div>
-
-                <div class="csop3">
-                    <input type="radio" name="csop" id="csop3" value="csop3">
-                    <label for="csop3">C csoport</label>
-                </div>
-
-                <h3> Melyik a kedvenc tárgya? (több tárgyat is választhat!)</h3>
-
-                <div class="box1">
-                    <input type="checkbox" name="box" id="matek">
-                    <label for="matek">Matematika</label>
-                </div>
-
-                <div class="box2">
-                    <input type="checkbox" name="box" id="fizika">
-                    <label for="fizika">Fizika</label>
-                </div>
-
-                <div class="box3">
-                    <input type="checkbox" name="box" id="info">
-                    <label for="info">Informatika</label>
-                </div>
-
-                <div class="box4">
-                    <input type="checkbox" name="box" id="prog">
-                    <label for="prog">Programozás</label>
-                </div>
-        </div>
     </form>
     <script src="script.js"></script>
 </body>
