@@ -3,10 +3,11 @@ body {
     color: white;
 }
 
-.firstColumnCont{
+.firstColumnCont {
     position: relative;
     margin: auto;
-    width: 240px;
+    width: 400px;
+    height: 450px;
     top: 130px;
     padding: 20px;
     border-radius: 5px;
@@ -23,12 +24,15 @@ body {
     border: 2px solid chocolate;
     border-radius: 4px;
     margin-bottom: 3px;
-    padding: 3px;
+    padding: 7px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .firstColumnCont div {
-    margin-bottom: 13px;
+    margin-top: 50px;
+    margin-bottom: 63px;
+    font-size: 20px;
+    text-align: center;
 }
 
 #maintext {
@@ -41,6 +45,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     transition: all .2s ease-in-out;
@@ -55,7 +60,8 @@ body {
     position: relative;
     margin: auto;
     top: 230px;
-    width: 240px;
+    width: 400px;
+    height: 550px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -67,15 +73,34 @@ body {
     padding: 3px
 }
 
-.secondFormCont csop {
+.secondFormCont .csop {
+    font-size: 20px;
+    text-align: center;
     cursor: pointer;
 }
 
-.secondFormCont h3 {
+.secondFormCont .box {
+    font-size: 20px;
     text-align: center;
+}
+
+.secondFormCont h3, .secondFormCont h2 {
+    text-align: center;
+    padding: 8px;
 }
 
 #maintext2 {
     text-align: center;
     padding: 5px;
+}
+
+.thirdFormCont {
+    position: relative;
+    margin: auto;
+    top: 340px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
